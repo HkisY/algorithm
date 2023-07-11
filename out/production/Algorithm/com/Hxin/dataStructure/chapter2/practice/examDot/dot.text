@@ -1,0 +1,61 @@
+exam 15:
+    iterate the 1st list through iterator,and than invoke the doClear() method.
+
+exam 16:
+    initialize the iterator`s variable <code> current </code> to this.size()-1. In <code> hasNext </code> method,
+return current >= 0.
+
+exam17:
+    look the java`s source code
+
+exam18:
+    look the java`s source code
+
+exam19:
+    Without head or tail nodes the operations of inserting and deleting from the end becomes an O(N) operation
+where the N is the number of elements in the list. The algorithm must walk down the list before inserting at the end.
+Without the head node insert needs a special case to account for when something is inserted before the first node.
+
+exam20:
+    Add a int:tag for the Node struct,if tag == 0,the struct is undeleted.
+Add two global variable for Node,Recording the number of deleted and undeleted Nodes respectively.
+The advantages are that it is simpler to code, and there is a possible saving if deleted keys are subsequently
+reinserted (in the same place).
+The disadvantage is that it uses more space, because each cell needs an extra bit (which is typically a byte),
+and unused cells are not freed.
+
+exam24:
+    Two stacks can be implemented in an array by having one grow from the low end of the array up,
+and the other from the high end down
+
+exam25:
+    (a) Let E be our extended stack. We will implement E with two stacks. One stack, which we’ll call S,
+is used to keep track of the push and pop operations, and the other M, keeps track of the minimum.
+To implement E.push (x), we perform S.push (x). If x is smaller than or equal to the top element in stack M,
+then we also perform M.push (x). To implement E.pop( ) we perform S.pop( ). If x is equal to the top element in stack M,
+then we also M.pop( ). E.findMin( ) is performed by examining the top of M. All these operations are clearly O(1).
+    (b) This result follows from a theorem in Chapter 7 that shows that sorting must take Ω(N log N) time.
+O(N) operations in the repertoire, including deleteMin, would be sufficient to sort.
+
+exam26:
+    Three stacks can be implemented by having one grow from the bottom up, another from the top down and a third
+somewhere in the middle growing in some (arbitrary) direction. If the third stack collides with either of the other two,
+it needs to be moved. A reasonable strategy is to move it so that its center (at the time of the move) is halfway
+between the tops of the other two stacks.
+
+exam27:
+    Stack space will not run out because only 49 calls will be stacked. However, the running time is exponential,
+as shown in Chapter 2, and thus the routine will not terminate in a reasonable amount of time.
+
+exam35:
+    (a) Does not work in constant time for insertions at the end.
+    (b) Because of the circularity, we can access the front item in constant time, so this works.
+
+exam36:
+    Copy the value of the item in the next node (that is, the node that follows the referenced node) into the current
+node (that is, the node being referenced). Then do a deletion of the next node.
+
+exam37:
+    (a) Add a copy of the node in position p after position p; then change the value stored in position p to x.
+    (b) Set p.data = p.next.data and set p.next = p.next.next. Note that the tail node guarantees that there is always
+a next node.
