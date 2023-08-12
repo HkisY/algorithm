@@ -40,13 +40,13 @@ import java.util.List;
 public class NumSubSeq {
     static final int P = 1000000007;
     static final int MAX_N = 100005;
-    int[] f = new int[MAX_N];
+    static int[] f = new int[MAX_N];
 
     public static void main(String[] args) {
         int[] nums = {3, 5, 6, 7};
 //        int[] nums = {2,3,3,4,6,7};
         int target = 9;
-        System.out.println(numSubSeq(nums, target));
+        System.out.println(numSubSeqWay(nums, target));
     }
 
     /**
@@ -129,7 +129,7 @@ public class NumSubSeq {
         return (int) (res % (1000000000 + 7));
     }
 
-    public int numSubSeqWay(int[] nums, int target) {
+    public static int numSubSeqWay(int[] nums, int target) {
         pretreatment();
         Arrays.sort(nums);
 
@@ -144,14 +144,14 @@ public class NumSubSeq {
         return ans;
     }
 
-    public void pretreatment() {
+    public static void pretreatment() {
         f[0] = 1;
         for (int i = 1; i < MAX_N; ++i) {
             f[i] = (f[i - 1] << 1) % P;
         }
     }
 
-    public int binarySearch(int[] nums, int target) {
+    public static int binarySearch(int[] nums, int target) {
         int low = 0, high = nums.length;
         while (low < high) {
             int mid = (high - low) / 2 + low;
