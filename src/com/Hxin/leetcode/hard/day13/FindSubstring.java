@@ -51,6 +51,7 @@ public class FindSubstring {
         System.out.println(findSubstring(s, words).toString());
     }
 
+
     public static List<Integer> findSubstring(String s, String[] words) {
         List<Integer> resList = new ArrayList<>();
         int wordArrayNum = words.length;
