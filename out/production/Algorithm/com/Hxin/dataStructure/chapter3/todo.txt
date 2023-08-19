@@ -1,5 +1,0 @@
-TODO: not finished
-B tree
-splay tree
-setting and mapping the collection use the Red-Black tree so... I will finish these two collection to reality
-when I learn the chapter
