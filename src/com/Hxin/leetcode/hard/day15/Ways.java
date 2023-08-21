@@ -30,11 +30,21 @@ package com.Hxin.leetcode.hard.day15;
  * @since 2023/8/17 21:09
  */
 public class Ways {
+
+
     public static void main(String[] args) {
+        String[] pizza = {"A..", "AAA", "..."};
+        int k = 3;
 
     }
 
-    public int ways(String[] pizza, int k) {
+    public static int ways(String[] pizza, int k) {
+
+        int rowNum = pizza.length;
+        int colNum = pizza[0].toCharArray().length;
+        int[] rowSum = new int[rowNum];
+        int[] colSum = new int[colNum];
         return 0;
     }
+
 }
