@@ -1,5 +1,7 @@
 package com.Hxin.leetcode.middle.month2.day3;
 
+import com.Hxin.leetcode.middle.month2.day2.Merge;
+
 import java.util.Arrays;
 import java.util.Comparator;
 
@@ -49,17 +51,9 @@ public class Insert {
     }
 
     public int[][] insert(int[][] intervals, int[] newInterval) {
-        if (intervals[0].length == 0){
-            intervals[0] = newInterval;
-            return intervals;
-        }
-        Arrays.sort(intervals, Comparator.comparingInt(o -> o[0]));
-        for (int[] interval : intervals) {
-
-
-
-        }
-
-        return null;
+        int[][] temp = new int[intervals.length+1][];
+        System.arraycopy(intervals, 0, temp, 0, intervals.length);
+        temp[intervals.length] = newInterval;
+        return Merge.merge(temp);
     }
 }
