@@ -21,7 +21,7 @@ public class TestSetByMe {
 //        set.add(9);
 //        System.out.println(set.add(10));
 //        System.out.println(set.add(6));
-//        Test the TreeSetByMe`s method
+//        Test1 the TreeSetByMe`s method
 //        set.add(6);
 //        set.add(4);
 //        set.add(5);
@@ -47,7 +47,7 @@ public class TestSetByMe {
 //        System.out.println( set.contains(7));
 //        set.containNode(7);
 //         set.containNode(6);
-        //Test the MyTreeSet`s remove method
+        //Test1 the MyTreeSet`s remove method
         MyTreeSet<Integer> myTreeSet = new MyTreeSet<>();
         myTreeSet.insert(6);
         myTreeSet.insert(4);

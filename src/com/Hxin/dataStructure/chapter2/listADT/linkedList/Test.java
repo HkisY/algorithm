@@ -9,7 +9,7 @@ import java.util.Iterator;
  */
 public class Test {
     public static void main(String[] args) {
-        //Test code which is written by myself
+        //Test1 code which is written by myself
         LinkedListByMe<Integer> list = new LinkedListByMe<>();
         list.add(6);
         list.add(1);
@@ -27,7 +27,7 @@ public class Test {
             System.out.println(iterator.next());
         }
 
-        //Test code which is written by the book
+        //Test1 code which is written by the book
         MyLinkedList<Integer> list2 = new MyLinkedList<>();
         list2.add(6);
         list2.add(1);
