@@ -1,8 +1,7 @@
-package com.Hxin.markableQus.calculate;
+package com.Hxin.markableQue.calculationQue;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
-import java.util.LinkedList;
 
 /**
  * 227
